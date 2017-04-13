@@ -1,0 +1,14 @@
+Spark supports ``Shared Variables'' along with RDDs
+\begin{itemize}
+  \item closure (variable + function) runs in parallel as set of tasks in nodes
+  \item generally ships copy of each variable to each task
+  \item for sharing across tasks: i) broadcast variables, ii) accumulators
+  \item broadcast: cache a value in memory on all nodes
+  \item accumulators: variables that are only ``added'', e.g., counters, sums.
+\end{itemize}
+\begin{lstlisting}
+	val broadcastVar = sc.broadcast(Array(1, 2, 3))
+
+	val accum = sc.accumulator(0, "My Accumulator")
+	sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
+\end{lstlisting}

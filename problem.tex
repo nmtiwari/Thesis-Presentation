@@ -1,0 +1,189 @@
+\section{Goal}
+% TODO What is the problem and why do we care
+    \subsection{Goal}
+        \begin{frame}
+            \frametitle{Goal}
+                 \begin{itemize}
+                    \item Reduce the efforts required to build MSR tools
+                    \item Ease the process of adopting, customizing and sharing MSR tools
+                    \item Allow users to run third-party tools more securely
+                 \end{itemize}
+
+            %\begin{figure}
+            %\centering
+            %\includegraphics[width=0.55\linewidth]{figures/toolsavailability}
+            %\end{figure}
+        \end{frame}
+
+        \subsection{Why Important?}
+        \begin{frame}
+            \frametitle{Scenario 1: MSR Tool Building and Sharing}
+        User wants to build a tool for mining
+        %    Build    a tool for mining the source code, version data, and bugs
+            \begin{columns}
+                \column{0.65\textwidth}
+                    \begin{itemize}
+                      \item Source code
+                          \begin{itemize}
+                            \item Java source code
+                          \end{itemize}
+                      \item Version control systsm(VCS)
+                          \begin{itemize}
+                            \item Subversion (SVN)
+                          \end{itemize}
+                      \item Bug Information
+                          \begin{itemize}
+                            \item BugZilla Bug Tracker
+                          \end{itemize}
+                    \end{itemize}
+
+                \column{0.35\textwidth}
+                    \begin{figure}
+                    \centering
+                    \includegraphics[width=0.60\linewidth]{figures/tomcat.png}
+                    \caption{\tiny{Software Repository Data}}
+                    \end{figure}
+
+            \end{columns}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Scenario 1: Tool Building and Sharing}
+            Build a tool for mining the source code, version data, and bugs
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.60\linewidth]{figures/tomcat-tool.png}
+                \caption{Repository Mining Tool Building}
+            \end{figure}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Scenario 1: Tool Building and Sharing}
+            Share the built tool with other researchers and practitioners
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.85\linewidth]{figures/tomcat-sharing.png}
+                \caption{Complete process of building and sharing tool}
+            \end{figure}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Challenges: Scenario 1 MSR Tool Building and Sharing}
+        %    Build    a tool for mining the source code, version data, and bugs
+             \begin{itemize}
+                \item User is required to build necessary data preperation tools
+             \end{itemize}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Challenges of building and sharing MSR tool}
+        %    Build    a tool for mining the source code, version data, and bugs
+            \begin{itemize}
+                \item User is required to build necessary data preperation tools
+                \item Tool are tightly coupled to other tools and particular SCM systems
+             \end{itemize}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Scenario 2: Adopting a shared tool}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.35]{figures/adopting.jpg}
+                \caption{Repository Mining Tool Building}
+            \end{figure}
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Scenario 2: Adopting a shared MSR tool}
+             \centering
+                Why Alice was able to adopt but not Bob? \\
+                \& \\
+                What are the possible points of failure?
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{How MSR tools are build?}
+            \begin{itemize}
+                \item MSR tools are build for specific project setting.
+                \item A project setting defines types and sources of various MSR artifacts
+                \footnote{
+                        MSR artifacts include Revision history from version control system (VCS),
+                        Source code of programming language(s), Bug data from bug trackers, Project metadata,
+                        users and teams data from forges
+                }.
+            \end{itemize}
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Potential Points of failure}
+            \begin{itemize}
+                \item MSR tools are build for specific project setting.
+                \item A project setting defines types and sources of various MSR artifacts
+                \footnote{
+                        MSR artifacts include Revision history from version control system (VCS),
+                        Source code of programming language(s), Bug data from bug trackers, Project metadata,
+                        users and teams data from forges
+                }.
+
+            \begin{alertblock}{Failure Cause}
+                An MSR tool build for one project setting may not work for different project settings.
+            \end{alertblock}
+
+            \end{itemize}
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Failure: Mismatched Project Settings}
+             %    Build    a tool for mining the source code, version data, and bugs
+             \begin{columns}
+                \column{0.33\textwidth}
+                    \centering Tool
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=0.45\linewidth]{figures/tomcat.jpg}
+ %                       \caption{Software Repository Data}
+                    \end{figure}
+
+                \column{0.33\textwidth}
+                    \centering Alice
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=0.45\linewidth]{figures/privaterepo.jpg}
+%                        \caption{Software Repository Data}
+                    \end{figure}
+
+                \column{0.33\textwidth}
+                    \centering Bob
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=0.45\linewidth]{figures/privaterepobob.jpg}
+%                        \caption{Software Repository Data}
+                    \end{figure}
+             \end{columns}
+        \end{frame}
+
+    \subsection{A study of reusability of MSR tools}
+        \begin{frame}
+            \frametitle{Reusability of published MSR tools\footnote{\label{replicability}{Replicating MSR:A study of the potential replicability of papers, Gregorio Robles et.al,  MSR 2010}}}
+            \begin{columns}
+                \column{0.55\textwidth}
+                    \centering
+                        \begin{itemize}
+                            \item Y = Replicable
+                            \item N = Not replicable
+                            \item P = Partially replicable
+                        \end{itemize}
+
+                \column{0.45\textwidth}
+                    \centering
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=0.75\linewidth]{figures/toolsavailability.png}
+                        \caption{Replicability of $MSR^{3}$}
+                    \end{figure}
+            \end{columns}
+        \end{frame}
