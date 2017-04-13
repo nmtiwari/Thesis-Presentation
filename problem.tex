@@ -53,7 +53,7 @@
             \begin{figure}
                 \centering
                 \includegraphics[width=0.60\linewidth]{figures/association.png}
-                \caption{Repository Mining Tool Building}
+                \caption{Association Minging Tool Details}
             \end{figure}
         \end{frame}
 
@@ -68,23 +68,6 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Challenges: Scenario 1 MSR Tool Building and Sharing}
-        %    Build    a tool for mining the source code, version data, and bugs
-             \begin{itemize}
-                \item User is required to build necessary data preperation tools
-             \end{itemize}
-        \end{frame}
-
-        \begin{frame}
-            \frametitle{Challenges of building and sharing MSR tool}
-        %    Build    a tool for mining the source code, version data, and bugs
-            \begin{itemize}
-                \item User is required to build necessary data preperation tools
-                \item Tool are tightly coupled to other tools and particular SCM systems
-             \end{itemize}
-        \end{frame}
-
-        \begin{frame}
             \frametitle{Scenario 2: Adopting a shared tool}
             \begin{figure}
                 \centering
@@ -93,15 +76,15 @@
             \end{figure}
         \end{frame}
 
-
+%\begin{comment}
         \begin{frame}
             \frametitle{Scenario 2: Adopting a shared MSR tool}
              \centering
-                Why Alice was able to adopt but not Bob? \\
+                Why Bob is not able to adopt the same tool? \\
                 \& \\
                 What are the possible points of failure?
         \end{frame}
-
+%\end{comment}
 
         \begin{frame}
             \frametitle{How MSR tools are build?}
@@ -127,6 +110,41 @@
                     \end{itemize}
                 \end{frame}
 
+        \begin{frame}
+            \frametitle{Association Mining Tool Challenges}
+            \begin{columns}
+            %    Build    a tool for mining the source code, version data, and bugs
+                \column{0.5\textwidth}
+                \begin{itemize}
+                    \item User is required to build necessary data preperation tools
+                 \end{itemize}
+                \column{0.65\textwidth}
+                 \begin{figure}
+                    \centering
+                        \includegraphics[width=0.85\linewidth]{figures/association.png}
+     %                       \caption{Software Repository Data}
+                 \end{figure}
+             \end{columns}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Association Mining Tool Challenges}
+            \begin{columns}
+            %    Build    a tool for mining the source code, version data, and bugs
+                \column{0.5\textwidth}
+                \begin{itemize}
+                    \item User is required to build necessary data preperation tools
+                    \item Tool are tightly coupled with SCM systems
+                 \end{itemize}
+                \column{0.65\textwidth}
+                 \begin{figure}
+                    \centering
+                        \includegraphics[width=0.85\linewidth]{figures/association.png}
+     %                       \caption{Software Repository Data}
+                 \end{figure}
+             \end{columns}
+        \end{frame}
+
 
         \begin{frame}
             \frametitle{Potential Points of failure}
@@ -136,7 +154,7 @@
              \begin{figure}
                 \centering
                     \includegraphics[width=0.85\linewidth]{figures/adoptingreserch.png}
- %                       \caption{Software Repository Data}
+                        \caption{A scenario of a practitioner adopting a MSR tool built by a researcher.}
              \end{figure}
         \end{frame}
 

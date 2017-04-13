@@ -9,5 +9,19 @@
 \beamer@subsectionintoc {3}{2}{Candoia Apps}{21}{0}{3}
 \beamer@subsectionintoc {3}{3}{Data Abstraction}{22}{0}{3}
 \beamer@subsectionintoc {3}{4}{Customization}{24}{0}{3}
-\beamer@subsectionintoc {3}{5}{Evaluation Engine}{28}{0}{3}
-\beamer@subsectionintoc {3}{6}{Security Architecture}{29}{0}{3}
+\beamer@subsectionintoc {3}{5}{Evaluation Engine}{29}{0}{3}
+\beamer@subsectionintoc {3}{6}{Evaluation Engine}{30}{0}{3}
+\beamer@subsectionintoc {3}{7}{Evaluation Engine}{31}{0}{3}
+\beamer@subsectionintoc {3}{8}{Security Architecture}{32}{0}{3}
+\beamer@sectionintoc {4}{Evaluation}{36}{0}{4}
+\beamer@subsectionintoc {4}{1}{Evaluation Critera}{36}{0}{4}
+\beamer@subsectionintoc {4}{2}{Applicability}{38}{0}{4}
+\beamer@subsectionintoc {4}{3}{Adoptability}{42}{0}{4}
+\beamer@subsectionintoc {4}{4}{Customizability}{45}{0}{4}
+\beamer@subsectionintoc {5}{1}{Related Work}{47}{0}{4}
+\beamer@subsectionintoc {5}{2}{Platforms}{48}{0}{4}
+\beamer@subsectionintoc {5}{3}{Dataset}{51}{0}{4}
+\beamer@sectionintoc {6}{Summary and Future Work}{52}{0}{5}
+\beamer@subsectionintoc {6}{1}{Summary}{52}{0}{5}
+\beamer@subsectionintoc {6}{2}{Future Work}{53}{0}{5}
+\beamer@subsectionintoc {6}{3}{Acknowledgement}{54}{0}{5}

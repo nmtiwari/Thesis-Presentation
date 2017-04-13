@@ -1,0 +1,51 @@
+\begin{figure}[ht!]
+\centering
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+%\resizebox{0.99\textwidth}{!}{%
+% \small
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|r|r|r|r|}
+\hline
+Projects        &
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}VCS} &
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}PL}   &
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Bugs} &
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\#LOC} & 
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\#Revs} & 
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\#Bugs} & 
+\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\#Devs} \\
+\hline 
+Tomcat 8.0.24 (TC)  & SVN  & Java  & Bugzilla & 381350 & 17433 & 3023 & 32 \\
+\hline
+
+Hadoop 2.7.1 (HD)   & Git  & Java  & JIRA     & 2217636 & 14301 & 10333 & 146 \\ \hline
+
+JUnit 4  (JU)       &Git   & Java  & GitHub   & 30535  & 2115  & 148  & 127 \\ \hline
+
+SLF4j 1.7.12 (SLF)  & Git  & Java  & JIRA     & 20866  & 1436 & 332 & 59 \\ \hline
+
+Bootstrap 3.3.5 (BT)& Git  & JS    & GitHub   & 65885 & 11840  & 213  & 718 \\
+\hline
+
+Node.js 0.12.7 (ND) & Git  & JS    & GitHub   & 3405739 & 14695   & 955 & 105 \\
+\hline
+
+Grunt 0.4.6  (GT)   & Git  & JS    & GitHub   & 3596 & 1399 & 155 & 29 \\ \hline
+
+JQuery 2.1.4 (JQ)   & Git  & JS    & GitHub   & 45212  & 6153  & 165  & 87 \\
+\hline
+
+PMD 5.3.3 (PMD)     & Git  & Java  & SF       & 175866  & 8736  & 1394  & 102 \\
+\hline
+
+JEdit 5.2.0 (JE)    & SVN  & Java  & SF       & 224127  & 24509  & 3926  & 7 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+%}
+\caption{Test projects.}
+\label{tab:projects}
+\end{figure}

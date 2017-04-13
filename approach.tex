@@ -23,11 +23,11 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Software as Apps}
+            \frametitle{How to build Software as Apps?}
             \begin{figure}
                 \centering
                 \includegraphics[scale=0.30]{figures/association.jpg}
-                \caption{Repository Mining Tool Building}
+                \caption{An MSR Tool Structure}
             \end{figure}
         \end{frame}
 
@@ -42,29 +42,29 @@
 
 
         \begin{frame}
-            \frametitle{Programs as Script}
+            \frametitle{How to build programs as Script?}
             \begin{figure}
                 \centering
                 \includegraphics[scale=0.25]{figures/programtoscript.jpg}
-                \caption{Repository Mining Tool Building}
+                \caption{Transofrmation of MSR program to MSR tool}
             \end{figure}
         \end{frame}
 
         \begin{frame}
-            \frametitle{Association mining as Candoia app}
+            \frametitle{MSR Tool as Candoia App}
             \begin{figure}
                 \centering
                 \includegraphics[width=0.75\linewidth]{figures/programstoscriptincandoia.jpg}
-                \caption{Repository Mining Tool Building}
+                \caption{MSR tool to Candoia App transformation}
             \end{figure}
         \end{frame}
 
         \begin{frame}
-            \frametitle{Building and Sharing Candoia app}
+            \frametitle{Process Of Building and Sharing Candoia App}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.55\linewidth]{figures/overview.pdf}
-                \caption{Repository Mining Tool Building}
+                \includegraphics[width=0.6\linewidth]{figures/overview.pdf}
+%                \caption{Repository Mining Tool Building}
             \end{figure}
         \end{frame}
 
@@ -73,7 +73,7 @@
         \begin{frame}
         \frametitle{Candoia App Structure}
         \begin{columns}
-            \column{0.55\textwidth}
+            \column{0.45\textwidth}
                 \begin{itemize}
                   \item Mining Logic
                     \begin{itemize}
@@ -90,15 +90,15 @@
                     \end{itemize}
                   \item Structure Decription
                     \begin{itemize}
-                        \item Json (file package.json)
+                        \item Json %(file package.json)
                     \end{itemize}
                 \end{itemize}
 
-            \column{0.55\textwidth}
+            \column{0.65\textwidth}
                 \begin{figure}
                     \centering
-                    \includegraphics[scale=0.30]{figures/structure.png}
-                    \caption{Repository Mining Tool Building}
+                    \includegraphics[scale=0.28]{figures/structure.png}
+                    \caption{Structure of an Candoia app}
                 \end{figure}
         \end{columns}
         \end{frame}
@@ -156,8 +156,7 @@
                 \item Customization in Apps
                     \begin{itemize}
                         \item Concerned with customizing different part of the apps
-                        \item app customizations in Candoia are more focused in terms of findings the right component(s) for customizations
-                        \item minimizes the changes required
+                        \item App customizations in Candoia are more focused in terms of findings the right component(s) for customizations
                     \end{itemize}
             \end{itemize}
         \end{frame}
@@ -171,12 +170,36 @@
                     \begin{itemize}
                         \item Concerned with customizing different part of the apps
                         \item app customizations in Candoia are more focused in terms of findings the right component(s) for customizations
-                        \item minimizes the changes required
-                            \begin{itemize}
-                                \item Changing from Apriori algorithm to EClat in Association mining
-                                \item Changing from File association to package level associattion
-                            \end{itemize}
                         \end{itemize}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.40]{figures/app.jpg}
+                \caption{An MSR App Structure}
+            \end{figure}
+            \end{itemize}
+        \end{frame}
+
+
+        \begin{frame}
+        \frametitle{Customizations}
+            Two levels of customizations
+            \begin{itemize}
+                \item Data source customizations
+                \item Customization in Apps
+                    \begin{itemize}
+                        \item Concerned with customizing different part of the apps
+                        \item App customizations in Candoia are more focused in terms of findings the right component(s) for customizations
+                        \item Script based app, easire to customize
+                    \end{itemize}
+            \end{itemize}
+        \end{frame}
+
+
+    \subsection{Evaluation Engine}
+        \begin{frame}
+            \frametitle{Candoia Evaluation Engine}
+            \begin{itemize}
+                \item Interpreter based Query evaluator for extended Boa DSL
             \end{itemize}
         \end{frame}
 
@@ -184,7 +207,23 @@
         \begin{frame}
             \frametitle{Candoia Evaluation Engine}
             \begin{itemize}
-                \item Interpreter based Query evaluator
+                \item Interpreter based Query evaluator of extended Boa DSL
+                \item Reads data from local and remote software artifacts
+                    \begin{itemize}
+                        \item Forges: Github, Source Forge
+                        \item VCS: GIT, SVN
+                        \item Bug Tracker: Bugzilla, JIRA, Github-Issue, SF-Ticket
+                        \item Programming Language: Java, Javascript
+                    \end{itemize}
+                \end{itemize}
+            \end{frame}
+
+
+    \subsection{Evaluation Engine}
+        \begin{frame}
+            \frametitle{Candoia Evaluation Engine}
+            \begin{itemize}
+                \item Interpreter based Query evaluator of extended Boa DSL
                 \item Reads data from local and remote software artifacts
                     \begin{itemize}
                         \item Forges: Github, Source Forge
@@ -199,24 +238,31 @@
             \end{frame}
 
 
+
     \subsection{Security Architecture}
         \begin{frame}
-            \frametitle{Candoia Security Architecture}
+            \frametitle{Candoia Security Concern}
             \begin{itemize}
-                \item Prevent apps from corrupting each other
-                \item Allow access to user data on a need to know basis
+                \item Private software data
+                    \begin{itemize}
+                        \item Allow access to user data on a need to know basis
+                    \end{itemize}
+                \item Installing and running third party apps
+                    \begin{itemize}
+                        \item Prevent apps from corrupting each other
+                        \item Prevent apps from accessing system resources directly
+                    \end{itemize}
             \end{itemize}
          \end{frame}
 
         \begin{frame}
-            \frametitle{Chromium based User Interface}
+            \frametitle{Chromium based Candoia frontend}
             \begin{itemize}
-                \item Candoia builds on the process architecture of Chromium
-                \item Process communicates with controller process via Inter Process Communication
+                \item Candoia builds on the process architecture of Chromium, each window runs as a process
+                \item Process communica tes with controller process via Inter Process Communication
                 \item Controller process mediates interaction between file system, window data etc. by exposing APIs.
                 \item An app can only access resources using exposed APIs.
             \end{itemize}
-            \emph{var data = api.boa.run('myprog.boa')}
          \end{frame}
 
         \begin{frame}
@@ -229,7 +275,8 @@
                 \item Inter-Process-Communication handle (api.ipc)
 %                \item Using pre-made views/graphs. (api.view)
             \end{itemize}
-            \emph{var data = api.boa.run('myprog.boa')}
+            \centering
+                \emph{var data = api.boa.run('myprog.boa')}
          \end{frame}
 
         \begin{frame}

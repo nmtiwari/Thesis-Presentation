@@ -17,6 +17,10 @@
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{hhline}
+\usepackage{tabularx}
+\usepackage{rotating}
 
 \DeclareGraphicsExtensions{.pdf,.jpg,.png}
 \graphicspath{{figures/}}
@@ -27,8 +31,8 @@ Apps}
 \institute[ISU]{Department of Computer Science \linebreak Iowa State
 University\linebreak nmtiwari@iastate.edu}
 
-\date[MS Thesis]{\textbf{POSC Committee} \\ Major Advisor: Dr. Hridesh Rajan \\ Dr. G. Prabhu \\
-Dr. S. Kautz}
+\date[MS Thesis]{\textbf{POSC Committee} \\ Major Advisor: Dr. Hridesh Rajan \\ Dr. Gurpur Prabhu \\
+Dr. Steaven Kautz}
 %\date{Month X, 20XX}
 
 % If you have a file called "university-logo-filename.xxx", where xxx
@@ -38,6 +42,7 @@ Dr. S. Kautz}
 %\pgfdeclareimage[height=0.25cm]{logo}{figures/logo}
 %\logo{\pgfuseimage{logo}}
 %\bibliography{refs}
+\def\inline{\lstinline[basicstyle=\small\sffamily]}
 
 \begin{document}
   \begin{frame}[plain]

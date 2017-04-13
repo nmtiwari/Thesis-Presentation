@@ -1,1 +1,110 @@
 \section{Evaluation}
+    \subsection{Evaluation Critera}
+        \begin{frame}
+            \frametitle{Evaluation}
+            \begin{itemize}
+                \item Applicability
+                    \begin{itemize}
+                        \item our claim is that MSR tasks and hypotheses can be ex- pressed and evaluated using Candoia platform\'s capabilities.
+                    \end{itemize}
+                \item Adoptability
+                    \begin{itemize}
+                        \item Candoia apps are portable across diverse project settings and require no changes
+                    \end{itemize}
+                \item Customizability
+                    \begin{itemize}
+                        \item Our claim that performing customizations in Candoia requires less efforts in terms of LOC.
+                    \end{itemize}
+            \end{itemize}
+         \end{frame}
+
+        \begin{frame}
+            \frametitle{Projects used in Evaluation}
+            \input{figures/projects}
+         \end{frame}
+
+    \subsection{Applicability}
+        \begin{frame}
+            \frametitle{Applicability}
+                \textbf{Claim:} MSR tasks and hypotheses can be ex- pressed and evaluated using Candoia \\
+             \textbf{Evaluation Strategy:}
+            \begin{itemize}
+                \item Created 24 Candoia apps covering
+                \begin{itemize}
+                    \item Bugs
+                    \item Software Evolution
+                    \item Project Management
+                    \item Source code analysis and Programming practices
+                \end{itemize}
+                \item Tested these applications over test projects
+            \end{itemize}
+         \end{frame}
+
+        \begin{frame}
+            \frametitle{Candoia apps used in evaluation}
+            \input{figures/questions}
+         \end{frame}
+
+        \begin{frame}
+            \frametitle{Results Analysis: App \#14 Maps modules to developers}
+                \begin{itemize}
+                    \item Software quality can be analyzed using values of \footnote{ \tiny{Basili. The
+                    influence of organizational structure on software quality, N. Nagappan et.al, ICSE'08}}
+                    \begin{itemize}
+                        \item NOE: Number of Engineers
+                        \item EF: Component edit frequency
+                        \item DMO: Depth of Master Ownership
+                        \item Bugs: Number of Bugs
+                    \end{itemize}
+                    \item App \#14 Computes these matrices
+                \end{itemize}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Results Analysis: App \#14 Maps modules to developers}
+                \begin{figure}
+                    \centering
+                    \includegraphics[scale=0.2]{figures/code-churn-metrics.png}
+                    \caption{Repository Mining Tool Building}
+                \end{figure}
+        \end{frame}
+
+    \subsection{Adoptability}
+        \begin{frame}
+            \frametitle{Adoptability}
+            \textbf{Claim:}  Candoia apps are portable across diverse project settings and require no changes while adopting for new settings\\
+            \textbf{Evaluation Strategy:}
+            \begin{itemize}
+                \item Implemted all 24 apps in Java for a project setting, keeping the tool modular and reusable
+                \item Adopt the developed tool to new project setting
+                \item Compared the LOC changes required in Candoia with Java to adopt a tool from a
+                 project setting to another
+            \end{itemize}
+         \end{frame}
+
+        \begin{frame}
+            \frametitle{Project Settings Coverd by Test Projects}
+            \input{figures/project-settings}
+         \end{frame}
+
+        \begin{frame}
+            \frametitle{LOC changes in Boa v/s. Java}
+            \input{figures/adoptability}
+         \end{frame}
+
+ \subsection{Customizability}
+        \begin{frame}
+            \frametitle{Customizability}
+            \textbf{Claim:} Performing customizations in Candoia requires less efforts in terms of LOC \\
+            \textbf{Evaluation Criteria:}
+            \begin{itemize}
+                \item Customize the Java and Candoia apps
+                \item Customizations include change in Mining logic, visualization, external tool usage etc.
+                \item Compared the LOC changes required to customize the Candoia app with Java tool
+            \end{itemize}
+         \end{frame}
+
+        \begin{frame}
+%            \frametitle{LOC changes in Boa v/s. Java}
+            \input{figures/customizability}
+         \end{frame}
