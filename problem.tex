@@ -18,7 +18,7 @@
         \subsection{Why Important?}
         \begin{frame}
             \frametitle{Scenario 1: MSR Tool Building and Sharing}
-        User wants to build a tool for mining
+        User wants to build a tool for Association Mining
         %    Build    a tool for mining the source code, version data, and bugs
             \begin{columns}
                 \column{0.65\textwidth}
@@ -29,18 +29,18 @@
                           \end{itemize}
                       \item Version control systsm(VCS)
                           \begin{itemize}
-                            \item Subversion (SVN)
+                            \item GIT
                           \end{itemize}
                       \item Bug Information
                           \begin{itemize}
-                            \item BugZilla Bug Tracker
+                            \item Github-Issues Bug Tracker
                           \end{itemize}
                     \end{itemize}
 
                 \column{0.35\textwidth}
                     \begin{figure}
                     \centering
-                    \includegraphics[width=0.60\linewidth]{figures/tomcat.png}
+                    \includegraphics[width=0.60\linewidth]{figures/junit4.jpg}
                     \caption{\tiny{Software Repository Data}}
                     \end{figure}
 
@@ -49,10 +49,10 @@
 
         \begin{frame}
             \frametitle{Scenario 1: Tool Building and Sharing}
-            Build a tool for mining the source code, version data, and bugs
+            Build a tool for association mining
             \begin{figure}
                 \centering
-                \includegraphics[width=0.60\linewidth]{figures/tomcat-tool.png}
+                \includegraphics[width=0.60\linewidth]{figures/association.png}
                 \caption{Repository Mining Tool Building}
             \end{figure}
         \end{frame}
@@ -62,7 +62,7 @@
             Share the built tool with other researchers and practitioners
             \begin{figure}
                 \centering
-                \includegraphics[width=0.85\linewidth]{figures/tomcat-sharing.png}
+                \includegraphics[width=0.85\linewidth]{figures/junitsharing.jpg}
                 \caption{Complete process of building and sharing tool}
             \end{figure}
         \end{frame}
@@ -108,34 +108,39 @@
             \begin{itemize}
                 \item MSR tools are build for specific project setting.
                 \item A project setting defines types and sources of various MSR artifacts
-                \footnote{
-                        MSR artifacts include Revision history from version control system (VCS),
-                        Source code of programming language(s), Bug data from bug trackers, Project metadata,
-                        users and teams data from forges
-                }.
             \end{itemize}
         \end{frame}
+
+                \begin{frame}
+                    \frametitle{How MSR tools are build?}
+                    \begin{itemize}
+                        \item MSR tools are build for specific project setting.
+                        \item A project setting defines types and sources of various MSR artifacts
+                        \item MSR Artifacts: Any kind of information realted to your software
+                        \begin{itemize}
+                            \item Revision history from version control system (VCS)
+                            \item Source code of programming language(s)
+                            \item Bug data from bug trackers
+                            \item Project metadata
+                            \item users and teams data from forges
+                        \end{itemize}
+                    \end{itemize}
+                \end{frame}
 
 
         \begin{frame}
             \frametitle{Potential Points of failure}
-            \begin{itemize}
-                \item MSR tools are build for specific project setting.
-                \item A project setting defines types and sources of various MSR artifacts
-                \footnote{
-                        MSR artifacts include Revision history from version control system (VCS),
-                        Source code of programming language(s), Bug data from bug trackers, Project metadata,
-                        users and teams data from forges
-                }.
-
             \begin{alertblock}{Failure Cause}
                 An MSR tool build for one project setting may not work for different project settings.
             \end{alertblock}
-
-            \end{itemize}
+             \begin{figure}
+                \centering
+                    \includegraphics[width=0.85\linewidth]{figures/adoptingreserch.png}
+ %                       \caption{Software Repository Data}
+             \end{figure}
         \end{frame}
 
-
+\begin{comment}
         \begin{frame}
             \frametitle{Failure: Mismatched Project Settings}
              %    Build    a tool for mining the source code, version data, and bugs
@@ -186,4 +191,13 @@
                         \caption{Replicability of $MSR^{3}$}
                     \end{figure}
             \end{columns}
+        \end{frame}
+
+\end{comment}
+
+        \begin{frame}
+            %\frametitle{Challenges: Scenario 1 MSR Tool Building and Sharing}
+        %    Build    a tool for mining the source code, version data, and bugs
+             \centering
+             How to make adopting MSR tools possible?
         \end{frame}
