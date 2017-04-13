@@ -1,3 +1,2 @@
 # Thesis-Presentation
-Latex based thesis presentation
-
+Master of Science [thesis presentation](presentation.pdf) about [Candoia](https://candoia.org).  
