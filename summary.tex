@@ -34,10 +34,16 @@
         \end{frame}
 
 
+\makeatletter % to change template
+    \setbeamertemplate{headline}[default] % not mandatory, but I though it was better to set it blank
+    \def\beamer@entrycode{\vspace*{-\headheight}} % here is the part we are interested in :)
+\makeatother
 
         \begin{frame}
-            \centering
-            Thank you
+                \begin{figure}
+                    \centering
+                    \includegraphics[scale=0.2]{figures/thankyou.png}
+                \end{figure}
         \end{frame}
 
 
