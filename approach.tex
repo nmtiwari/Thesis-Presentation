@@ -115,15 +115,6 @@
         \end{frame}
 
 
-        \begin{frame}
-        \frametitle{Candoia Data Schema}
-                \begin{figure}
-                    \centering
-                    \includegraphics[scale=0.45]{figures/data-schema.pdf}
-                    \caption{Candoia's data schema}
-                \end{figure}
-        \end{frame}
-
     \subsection{Customization}
         \begin{frame}
         \frametitle{Customizations}
@@ -203,7 +194,6 @@
             \end{itemize}
         \end{frame}
 
-    \subsection{Evaluation Engine}
         \begin{frame}
             \frametitle{Candoia Evaluation Engine}
             \begin{itemize}
@@ -219,7 +209,7 @@
             \end{frame}
 
 
-    \subsection{Evaluation Engine}
+
         \begin{frame}
             \frametitle{Candoia Evaluation Engine}
             \begin{itemize}
@@ -262,27 +252,5 @@
                 \item Process communica tes with controller process via Inter Process Communication
                 \item Controller process mediates interaction between file system, window data etc. by exposing APIs.
                 \item An app can only access resources using exposed APIs.
-            \end{itemize}
-         \end{frame}
-
-        \begin{frame}
-            \frametitle{Few APIs available to Candoia app}
-            \begin{itemize}
-                \item Running MSR queries (api.boa)
-                \item Reading (not writing) files within app (api.fs)
-                \item Saving arbitrary data between instances (api.store)
-                \item Getting its own package info such as version (api.meta)
-                \item Inter-Process-Communication handle (api.ipc)
-%                \item Using pre-made views/graphs. (api.view)
-            \end{itemize}
-            \centering
-                \emph{var data = api.boa.run('myprog.boa')}
-         \end{frame}
-
-        \begin{frame}
-            \frametitle{Candoia Exchange}
-            \begin{itemize}
-                \item A web platform for sharing MSR apps
-                \item Candoia frameworks can connect to exchange for gathering information and  installing apps
             \end{itemize}
          \end{frame}
